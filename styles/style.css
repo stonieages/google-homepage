@@ -10,6 +10,7 @@ html, body {
 
 /* makes links act like on Google homepage */
 a {
+	font-family: arial, sans-serif;
 	color: gray;
 	text-decoration: none;
 }
@@ -39,7 +40,7 @@ a:hover{
 	position: relative;
 	top: 180px;
 	clear: both; /*need to clear otherwise image will center oddly*/
-	padding-bottom: 2.4em; /*need to clear the footer which is absolute positioned so not in normal flow*/
+	padding-bottom: 3em; /*need to clear the footer which is absolute positioned so not in normal flow*/
 }
 
 /*places the footer right at the bottom, need absolute*/
@@ -47,7 +48,7 @@ a:hover{
 	position: absolute;
 	bottom: 0;
 	width: 100%; /*need this to stretch across entire screen*/
-	height: 2.4em;
+	height: 3em;
 	background-color: #FBF9F9;
 }
 
@@ -70,10 +71,16 @@ a:hover{
 	font-size: 17px;
 	height: 40px;
 	width: 480px;
+	padding-left: 20px;
+	border: 1px solid rgb(222,222,222);
 	margin: 30px auto;
 	display: block;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
 }
 
+#search_box:hover {
+	box-shadow: 1px 2px 5px rgba(0,0,0,0.2)
+}
 /* center the set of two Search and Lucky buttons*/
 .buttons {
 	text-align: center;
@@ -91,16 +98,22 @@ a:hover{
 
 	width: auto;
 	padding: 10px 18px;
-	border: none;
+	border: 1px solid #FBF9F9;
+	border-radius: 2px;
 	margin: 0 2px;
 	display: inline-block;
+}
+
+.buttons input[type="submit"]:hover {
+	color: black;
+	border: 1px solid #C5C2C2;
 }
 
 /*makes the footer links spaced out*/
 .footer a{
 	font-size: 14px;
 	display: inline-block;
-	padding: 0.7em 8px; /*need the em padding to vertically center it in the footer div*/
+	padding: 1em 8px; /*need the em padding to vertically center it in the footer div*/
 }
 
 .l_foot {
