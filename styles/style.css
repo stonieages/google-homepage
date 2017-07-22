@@ -4,10 +4,43 @@
 	padding: 0;
 }
 
+/* makes links act like on Google homepage */
+a {
+	color: gray;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/*Places the Gmail, Images, Sign In section in right location top right */
+.header{
+	position:relative;
+	float: right;
+
+	top: 15px;
+	right: 40px;
+
+	display: block;
+}
+
+/*Makes those header links spaced out*/
+.header a{
+	font-size: 14px;
+	display: inline-block;
+	padding: 5px 5px;
+}
+
 /*move the middle block vertically down*/
 .middle {
 	position: relative;
-	top: 195px;
+	top: 180px;
+	clear: both; /*need to clear otherwise image will center oddly*/
 }
 
 /* center the logo, make it a block, and move it in vertical position */
@@ -19,6 +52,7 @@
 
 /*size and center the search box*/
 #search_box {
+	font-size: 17px;
 	height: 40px;
 	width: 480px;
 	margin: 30px auto;
