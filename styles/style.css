@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+html, body {
+	width: 100%;
+}
+
 /* makes links act like on Google homepage */
 a {
 	color: gray;
@@ -29,18 +33,29 @@ a:hover{
 	display: block;
 }
 
-/*Makes those header links spaced out*/
-.header a{
-	font-size: 14px;
-	display: inline-block;
-	padding: 5px 5px;
-}
 
 /*move the middle block vertically down*/
 .middle {
 	position: relative;
 	top: 180px;
 	clear: both; /*need to clear otherwise image will center oddly*/
+	padding-bottom: 2.4em; /*need to clear the footer which is absolute positioned so not in normal flow*/
+}
+
+/*places the footer right at the bottom, need absolute*/
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%; /*need this to stretch across entire screen*/
+	height: 2.4em;
+	background-color: #FBF9F9;
+}
+
+/*Makes those header links spaced out*/
+.header a{
+	font-size: 14px;
+	display: inline-block;
+	padding: 5px 5px;
 }
 
 /* center the logo, make it a block, and move it in vertical position */
@@ -79,5 +94,24 @@ a:hover{
 	border: none;
 	margin: 0 2px;
 	display: inline-block;
+}
+
+/*makes the footer links spaced out*/
+.footer a{
+	font-size: 14px;
+	display: inline-block;
+	padding: 0.7em 8px; /*need the em padding to vertically center it in the footer div*/
+}
+
+.l_foot {
+	position: relative; /*need this to leave the 10px space later*/
+	float: left; /*left align*/
+	left: 10px;
+}
+
+.r_foot {
+	position: relative;
+	float:right;
+	right: 10px;
 }
 
