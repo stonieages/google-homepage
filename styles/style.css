@@ -4,12 +4,46 @@
 	padding: 0;
 }
 
+/*move the middle block vertically down*/
+.middle {
+	position: relative;
+	top: 195px;
+}
+
 /* center the logo, make it a block, and move it in vertical position */
 #logo {
 	width: auto;
 	margin: auto;
 	display: block;
-	position: relative;
-	top: 195px;
+}
+
+/*size and center the search box*/
+#search_box {
+	height: 40px;
+	width: 480px;
+	margin: 30px auto;
+	display: block;
+}
+
+/* center the set of two Search and Lucky buttons*/
+.buttons {
+	text-align: center;
+}
+
+/*define the visuals of the buttons and that they are inline block*/
+.buttons input[type="submit"] {
+	-webkit-appearance: none;
+
+	font-size: 13px;
+	font-weight: bold;
+
+	color: gray;
+	background-color: #FBF9F9;
+
+	width: auto;
+	padding: 10px 18px;
+	border: none;
+	margin: 0 2px;
+	display: inline-block;
 }
 
